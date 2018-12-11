@@ -3,12 +3,30 @@
   <head>
     <title>Onepageapp</title>
     <%= csrf_meta_tags %>
-
+      <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i|Open+Sans:800|Lobster|EB+Garamond" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+  <nav class="navbar navbar-default navbar-static-top" role="navigaton">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          Start Bootstrap
+        <% end %>
+      </div>
+      <div class="home-callout text-center conteiner-fluid"> 
+        <div class="intro-lead-in">Welcome To Our Studio!</div>
+        <div class="intro-heading">IT'S NICE TO MEET YOU</div>
+        </br>
+        <%= link_to "TELL ME MORE", href="#services", class: 'btn btn-warning btn-lg page-scroll'%>
+      </div>
+    </div>
+  </nav>
+  
+      <%= yield %>
+    
   </body>
 </html>
