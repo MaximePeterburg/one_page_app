@@ -23,9 +23,9 @@
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a  {
-    color: orange;
+    color: #fed136;
     &:hover{
-        color:orange;
+        color:#fed136;
         opacity: 0.75;
     }
 }
@@ -47,7 +47,6 @@
 h4{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  margin-top: 20px;
 }
 h3{
   font-family: 'EB Garamond', serif;
@@ -75,9 +74,11 @@ p{
   font-family: 'Open Sans', sans-serif;
   font-size: 500%;
 }
-.section{
+section{
   margin-bottom: 200px;
 }
 .uneven-section{
   background-color: lightgrey;
+  padding-bottom: 200px;
+  margin-bottom: 0;
 }

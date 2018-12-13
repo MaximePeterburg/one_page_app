@@ -1,0 +1,74 @@
+<section id="Portfolio" class="uneven-section">
+  <div class="container">
+    <h2>PORTFOLIO</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <div class="row text-center">
+      <div class="col-md-6">     
+        <%= link_to '#portfolioModal1', 'data-toggle' => 'modal' do %>
+          <%= image_tag("https://i.imgur.com/qtVofCH.jpg", :class => "portfolio-image") %>
+        <% end %>
+        <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="modal-title" id="portfolioModal1Title">DevMatch</h5>
+                <h3 class="text-muted">Lorem ipsum dolor sit amet.</h3>
+                <%= image_tag("https://i.imgur.com/qtVofCH.jpg", :class => "portfolio-open-image") %>
+                </br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                </br>
+                <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-times"></i>  CLOSE PROJECT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="well">
+          <h4>DevMatch</h4>
+          <p>Software As A Service</p>
+        </div>
+      </div>
+      <div class="col-md-6"> 
+        <%= link_to '#portfolioModal2', 'data-toggle' => 'modal' do %>
+          <%= image_tag("https://i.imgur.com/AkGJhHq.jpg", :class => "portfolio-image") %>
+        <% end %>
+        <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Title" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="modal-title" id="portfolioModal1Title">Start Bootstrap</h5>
+                <h3 class="text-muted">Lorem ipsum dolor sit amet.</h3>
+                <%= image_tag("https://i.imgur.com/AkGJhHq.jpg", :class => "portfolio-open-image") %>
+                </br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                </br>
+                <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-times"></i>  CLOSE PROJECT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="well">
+          <h4>Start Bootstrap</h4>
+          <p>Website Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

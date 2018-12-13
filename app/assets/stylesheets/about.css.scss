@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.timeline{
+  width: 2px;
+  height: 100px;
+  margin-left: 80px;
+  background-color: #f1f1f1;
+}
+.about-picture{
+  border-radius: 50%;
+  height: 164px;
+  width: 164px;
+  border: 7px solid #f1f1f1;
+}
+li .well{
+  background-color:#fed136;
+  border-radius: 50%;
+  height: 164px;
+  width: 164px;
+  border: 7px solid #f1f1f1;
+  h4{
+    color: white;
+    line-height: 180%;
+  }
+}
