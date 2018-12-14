@@ -10,21 +10,30 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-default navbar-static-top" role="navigaton">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigaton">
     <div class="container">
       <div class="navbar-header">
         <%= link_to root_path, class: "navbar-brand" do %>
           Start Bootstrap
         <% end %>
       </div>
-      <div class="home-callout text-center conteiner-fluid"> 
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading">IT'S NICE TO MEET YOU</div>
-        </br>
-        <%= link_to "TELL ME MORE", href="#services", class: 'btn btn-warning btn-lg page-scroll'%>
-      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <%= link_to "SERVICES", href="#services" %></li>
+        <li> <%= link_to "PORTFOLIO", href="#portfolio" %></li>
+        <li> <%= link_to "ABOUT", href="#about" %></li>
+        <li> <%= link_to "TEAM", href="#team" %></li>
+        <li> <%= link_to "CONTACT US", href="#contact" %></li>
+      </ul>
     </div>
   </nav>
+  <header>
+    <div class="home-callout text-center conteiner-fluid"> 
+      <div class="intro-lead-in">Welcome To Our Studio!</div>
+      <div class="intro-heading">IT'S NICE TO MEET YOU</div>
+      </br>
+      <%= link_to "TELL ME MORE", href="#services", class: 'btn btn-warning btn-lg'%>
+    </div>
+  </header>
   
       <%= yield %>
     

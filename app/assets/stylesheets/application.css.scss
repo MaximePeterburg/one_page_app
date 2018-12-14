@@ -16,10 +16,17 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+.navbar{
+  background-color: black;
+  border-bottom: 0px;
+}
 
 .navbar-brand {
   font-family: 'Lobster', cursive;
   font-size: 200%;
+}
+.navbar-right li{
+  font-weight: 800;
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a  {
@@ -29,7 +36,7 @@
         opacity: 0.75;
     }
 }
-.navbar{
+header{
   background-image: url(https://i.imgur.com/VTxhQh6.jpg);
   width: 100%;
   background-size: cover;
@@ -81,4 +88,14 @@ section{
   background-color: lightgrey;
   padding-bottom: 200px;
   margin-bottom: 0;
+}
+footer{
+  margin: 25px 0px;
+}
+
+footer .fa-stack{
+  color: black;
+}
+.footer-link{
+  color: #fed136;
 }
