@@ -16,11 +16,14 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+html{
+  scroll-behavior: smooth;
+}
+
 .navbar{
   background-color: black;
   border-bottom: 0px;
 }
-
 .navbar-brand {
   font-family: 'Lobster', cursive;
   font-size: 200%;
@@ -35,6 +38,17 @@
         color:#fed136;
         opacity: 0.75;
     }
+}
+.nav-pills li a{
+  color: white;
+  margin: 5px 0px;
+  &:hover{
+    background-color: #fed136;
+  }
+}
+
+body{
+  position: relative;
 }
 header{
   background-image: url(https://i.imgur.com/VTxhQh6.jpg);

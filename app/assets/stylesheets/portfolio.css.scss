@@ -10,3 +10,29 @@
 .modal-body h3{
   margin-bottom: 10px;
 }
+.hover-image{
+  position: relative;
+  height: 350px;
+  width: 555px;
+}
+.hover-image-element{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(254, 209, 38, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hover-image:hover .hover-image-element{
+  visibility: visible;
+  opacity: 1;
+}
+.fa-plus{
+  transition: .2s;
+}

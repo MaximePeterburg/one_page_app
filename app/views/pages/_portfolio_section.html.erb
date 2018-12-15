@@ -3,9 +3,14 @@
     <h2>PORTFOLIO</h2>
     <h3>Lorem ipsum dolor sit amet.</h3>
     <div class="row text-center">
-      <div class="col-md-6">     
+      <div class="col-md-6">
         <%= link_to '#portfolioModal1', 'data-toggle' => 'modal' do %>
-          <%= image_tag("https://i.imgur.com/qtVofCH.jpg", :class => "portfolio-image") %>
+          <div class="hover-image">     
+            <%= image_tag("https://i.imgur.com/qtVofCH.jpg", :class => "portfolio-image") %>
+            <div class="hover-image-element">
+              <i class="fas fa-plus fa-6x"></i>
+            </div>
+          </div>
         <% end %>
         <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Title" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
@@ -38,7 +43,12 @@
       </div>
       <div class="col-md-6"> 
         <%= link_to '#portfolioModal2', 'data-toggle' => 'modal' do %>
+        <div class="hover-image">
           <%= image_tag("https://i.imgur.com/AkGJhHq.jpg", :class => "portfolio-image") %>
+          <div class="hover-image-element">
+            <i class="fas fa-plus fa-6x"></i>
+          </div>
+        </div>
         <% end %>
         <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Title" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
